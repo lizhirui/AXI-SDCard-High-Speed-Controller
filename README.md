@@ -80,6 +80,8 @@ create_generated_clock -name sdclk -source [get_pins top_design_i/clk_wiz_main/c
 
 目前已在`KC705`平台上测试通过，FPGA为`XC7K325T-2FFG900`，如需要使用其它的FPGA，注意替换`sd_controller_wrapper.v`中的原语。
 
+该模块可以直接被Verilog或SystemVerilog引用，也可以直接加入Vivado的Block Design中使用。
+
 ## 软件部署
 
 在src目录中附带了示例的软件驱动可供使用，该驱动提供了如下函数：
